@@ -1,20 +1,21 @@
-body{
+body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, p{
+h1,
+p {
   color: #fff;
   font-weight: 200;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-header{
-  background: #D50842;
+header {
+  background: #d50842;
   height: 200px;
 }
 
@@ -54,8 +55,12 @@ header{
     display: table;
 }
 
-.cf:after { clear: both; }
-.cf { *zoom: 1; }
+.cf:after {
+ clear: both;
+}
+.cf {
+*zoom: 1;
+}
 
 /* GENERAL STYLES FOR BOX AND OVERLAY */
 
@@ -69,7 +74,7 @@ header{
   position: relative;
 }
 
-.overlay{
+.overlay {
   width: 100%;
   height:100%;
   position: absolute;
@@ -81,7 +86,8 @@ header{
 
 /* SLIDE IN */
 
-.slide-in .overlay{
+.slide-in
+.overlay {
   background-color: #6addaa;
   line-height: 200px;
   color: #fff;
@@ -91,13 +97,16 @@ header{
   transition: transform 0.5s ease-out;
 }
 
-.slide-in .box:hover .overlay{
+.slide-in
+.box:hover
+.overlay {
   transform: translateX(0);
 }
 
 /* SLIDE UP */
 
-.slide-up .overlay{
+.slide-up
+.overlay {
   background-color: #3dcbe8;
   line-height: 200px;
   color: #fff;
@@ -107,13 +116,16 @@ header{
   transition: transform 0.5s ease-out;
 }
 
-.slide-up .box:hover .overlay{
+.slide-up
+.box:hover
+.overlay {
   transform: translateY(0);
 }
 
 /* SLIDE DOWN DELAY */
 
-.slide-down-delay .overlay{
+.slide-down-delay
+.overlay {
   background-color: #ee6f8c;
   line-height: 200px;
   color: #fff;
@@ -123,11 +135,15 @@ header{
   transition: transform 0.5s ease-out;
 }
 
-.slide-down-delay .box:hover .overlay{
+.slide-down-delay
+.box:hover
+.overlay {
   transform: translateY(0);
 }
 
-.slide-down-delay .overlay img{
+.slide-down-delay
+.overlay
+img {
   transform: translateY(-80%);
   opacity: 0;
   -webkit-transition: transform 0.5s linear, opacity 0.5s linear 0.5s;
@@ -135,14 +151,18 @@ header{
   transition: transform 0.5s linear, opacity 0.5s linear 0.5s;
 }
 
-.slide-down-delay .box:hover .overlay img{
+.slide-down-delay
+.box:hover
+.overlay
+img {
   transform: translateY(0);
   opacity: 1;
 }
 
 /* ROTATE */
 
-.rotate .overlay{
+.rotate
+.overlay {
   background-color: #6d94bb;
   line-height: 200px;
   color: #fff;
@@ -153,13 +173,16 @@ header{
   transition: transform 0.5s ease-in-out;
 }
 
-.rotate .box:hover .overlay{
+.rotate
+.box:hover
+.overlay {
   transform: rotate(0deg);
 }
 
 /* SCALE */
 
-.scale .overlay{
+.scale
+.overlay {
   background-color: #efcb5e;
   line-height: 200px;
   color: #fff;
@@ -169,13 +192,16 @@ header{
   transition: transform 0.6s ease-in-out;
 }
 
-.scale .box:hover .overlay{
+.scale
+.box:hover
+.overlay {
   transform: translateX(0) scale(1);
 }
 
 /* FLIP */
 
-.flip .overlay{
+.flip
+.overlay {
   background-color: #009688;
   line-height: 200px;
   color: #fff;
@@ -186,14 +212,17 @@ header{
   transition: transform 0.6s ease-in-out 0.3s, opacity 0.3s ease-in-out;
 }
 
-.flip .box:hover .overlay{
+.flip
+.box:hover
+.overlay {
   opacity: 1;
   transform: rotateY(0deg);
 }
 
 /* SKEW */
 
-.skew .overlay{
+.skew
+.overlay {
   background-color: #f44336;
   line-height: 200px;
   color: #fff;
@@ -204,14 +233,17 @@ header{
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
-.skew .box:hover .overlay{
+.skew
+.box:hover
+.overlay {
   transform: skewX(0deg);
   opacity: 1;
 }
 
 /* CORNER */
 
-.corner-bottom .overlay{
+.corner-bottom
+.overlay {
   background-color: #9c27b0;
   line-height: 200px;
   color: #fff;
@@ -221,13 +253,16 @@ header{
   transition: transform 0.4s ease-in-out;
 }
 
-.corner-bottom .box:hover .overlay{
+.corner-bottom
+.box:hover
+.overlay {
    transform: translate(0, 0);
 }
 
 /* CORNER */
 
-.corner-top .overlay{
+.corner-top
+.overlay {
   background-color: #ff5722;
   line-height: 200px;
   color: #fff;
@@ -237,17 +272,23 @@ header{
   transition: transform 0.4s ease-in-out;
 }
 
-.corner-top .box:hover .overlay{
+.corner-top
+.box:hover
+.overlay {
    transform: translate(0, 0);
+}
+
+img {
+    height: 200px;
 }
 
 @media(min-width: 360px) and (max-width: 603px)  {
 
-.four{ 
+.four {
   width: 100%;
 }
 
-.title{
+.title {
   width: 68.5%;
 
 }
